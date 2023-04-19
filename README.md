@@ -3,11 +3,12 @@ A Fully Featured Django  E-commerce Platform.
 
 ## Features
 1. Browse Products.
-2. Add Products to a Shopping Cart. 
-3. Apply Coupon Codes.  
-4. Checkout Process.
-5. Pay with Credit card or M-pesa. 
-6. Generate Invoices. 
-8. Product Recommendation Engine.  
+2. Product Recommendation Engine. 
+3. Add Products to a Shopping Cart. 
+4. Apply Coupon Codes.  
+5. Checkout Process.
+6. Pay with Credit card or M-pesa. 
+7. Generate Invoices. 
+8. Manage Customer Orders. 
 9. Use of Multiple langaunges. 
 
