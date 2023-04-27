@@ -1,7 +1,11 @@
+from unittest import skip
+
 from django.test import TestCase
-from django.urls import reverse, resolve
-from shop.views import product_list, product_detail
-from shop.models import Product, Category
+from django.urls import resolve, reverse
+
+from shop.models import Category, Product
+from shop.views import product_detail, product_list
+
 
 class ProductListPageURLTests(TestCase):
 
@@ -52,10 +56,11 @@ class ProductDetailPageURLTests(TestCase):
         
         self.products_by_category = self.category.products.all() 
    
-    # def test_url_exists_at_correct_location(self):
-    #     response = self.client.get("/<self.product.id>/jbl-soundbar/")
-    #     print(self.product.id)
-    #     self.assertEqual(response.status_code, 200)
+    @skip
+    def test_url_exists_at_correct_location(self):
+        response = self.client.get("/<self.product.id>/jbl-soundbar/")
+        print(self.product.id)
+        self.assertEqual(response.status_code, 200)
 
     def test_url_available_by_name(self):  
         response = self.client.get(reverse("shop:product_detail", args=[self.product.id,\
