@@ -35,9 +35,11 @@ sqlparse==0.4.4
 stripe==5.4.0
 tinycss2==1.2.1
 tornado==6.3
+uwsgi
 urllib3==1.26.15
 vine==5.0.0
 wcwidth==0.2.6
 weasyprint==58.1
 webencodings==0.5.1
 zopfli==0.2.2
+
